@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoWeather</title>
+</head>
+<body>
+    <header>
+        <h1>ChronoWeather</h1>
+        <h2>Your time and climate best informer!!</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>How to use it?</h3>
+            <p>
+                It's pretty simple! Just select a city and a time zone to get the party started!!
+            </p>
+        </section>
+
+        <section>
+            <h3>Search here: </h3>
+
+            <form id="ChronoWeatherForm">
+                <label for="timeZone">Time zone:</label>
+                <input type="text" id="timeZone" required>
+                <br>
+
+                <label for="city">city:</label>
+                <input type="text" id="city" required>
+                <br>
+
+                <button type="submit" id="formBtn">Search</button>
+            </form>
+        </section>
+
+        <section>
+            <h3 id="outTitle"></h3>
+            
+            <div class="timeDiv">
+                <p id="outTimeText"></p>
+                
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
